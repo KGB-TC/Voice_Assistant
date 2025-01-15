@@ -4,7 +4,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-OPENAI_KEY = os.getenv('OPENAI_KEY')
+OPENAI_KEY = os.getenv('')  # import your secrete key from your .env file.
+                            # You have to create your .env file in your root directory
 
 import openai
 openai.api_key = OPENAI_KEY
